@@ -15,7 +15,7 @@ const Header = () => {
         <Row align="middle" gutter={[16, 16]} style={{ marginBottom: 16 }}>
           <Col xs={6} md={4}>
             <Image
-              src="/image.png"
+              src="./image.png"
               alt="Логотип"
               width={50}
               height={50}
