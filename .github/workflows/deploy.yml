@@ -6,9 +6,18 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# ДОБАВЬТЕ ЭТОТ БЛОК:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
     - uses: actions/checkout@v4
