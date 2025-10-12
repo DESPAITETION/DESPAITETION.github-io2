@@ -5,6 +5,7 @@ import Header from './components/Header';
 import LinksSection from './components/LinksSection';
 import TableSection from './components/TableSection';
 import FormSection from './components/FormSection';
+import Calculator from './components/Calculator';
 
 const { Content, Footer } = Layout;
 
@@ -35,6 +36,13 @@ const App = () => {
                 <FormSection />
               </Col>
             </Row>
+
+            {/* Калькулятор */}
+            <Row style={{ marginTop: 24 }}>
+              <Col xs={24}>
+                <Calculator />
+              </Col>
+            </Row>
           </div>
         </Content>
         
@@ -46,7 +54,7 @@ const App = () => {
           marginTop: 48 
         }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            &copy; Ханаху Каплан 2025
+            &copy; Сергей Синица 2025
           </div>
         </Footer>
       </Layout>
