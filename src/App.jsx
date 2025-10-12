@@ -54,7 +54,7 @@ const App = () => {
           marginTop: 48 
         }}>
           <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            &copy; Сергей Синица 2025
+            &copy; Ханаху Каплан 2025
           </div>
         </Footer>
       </Layout>
