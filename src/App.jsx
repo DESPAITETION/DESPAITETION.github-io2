@@ -5,7 +5,6 @@ import Header from './components/Header';
 import LinksSection from './components/LinksSection';
 import TableSection from './components/TableSection';
 import FormSection from './components/FormSection';
-import Calculator from './components/Calculator';
 import ServiceCalculator from './components/ServiceCalculator';
 
 const { Content, Footer } = Layout;
@@ -35,13 +34,6 @@ const App = () => {
             <Row style={{ marginTop: 24 }}>
               <Col xs={24}>
                 <FormSection />
-              </Col>
-            </Row>
-
-            {/* Калькулятор товаров (задание 5) */}
-            <Row style={{ marginTop: 24 }}>
-              <Col xs={24}>
-                <Calculator />
               </Col>
             </Row>
 
