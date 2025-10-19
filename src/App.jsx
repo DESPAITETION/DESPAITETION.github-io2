@@ -6,6 +6,7 @@ import LinksSection from './components/LinksSection';
 import TableSection from './components/TableSection';
 import FormSection from './components/FormSection';
 import Calculator from './components/Calculator';
+import ServiceCalculator from './components/ServiceCalculator';
 
 const { Content, Footer } = Layout;
 
@@ -37,10 +38,17 @@ const App = () => {
               </Col>
             </Row>
 
-            {/* Калькулятор */}
+            {/* Калькулятор товаров (задание 5) */}
             <Row style={{ marginTop: 24 }}>
               <Col xs={24}>
                 <Calculator />
+              </Col>
+            </Row>
+
+            {/* Калькулятор услуг (задание 6) */}
+            <Row style={{ marginTop: 24 }}>
+              <Col xs={24}>
+                <ServiceCalculator />
               </Col>
             </Row>
           </div>
