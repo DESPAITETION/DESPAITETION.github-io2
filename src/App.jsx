@@ -6,6 +6,7 @@ import LinksSection from './components/LinksSection';
 import TableSection from './components/TableSection';
 import FormSection from './components/FormSection';
 import ServiceCalculator from './components/ServiceCalculator';
+import Gallery from './components/Gallery';
 
 const { Content, Footer } = Layout;
 
@@ -34,6 +35,13 @@ const App = () => {
             <Row style={{ marginTop: 24 }}>
               <Col xs={24}>
                 <FormSection />
+              </Col>
+            </Row>
+
+            {/* Галерея (задание 7) */}
+            <Row style={{ marginTop: 24 }}>
+              <Col xs={24}>
+                <Gallery />
               </Col>
             </Row>
 

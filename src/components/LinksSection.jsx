@@ -32,7 +32,7 @@ const LinksSection = () => {
       return (
         <List.Item>
           <Image
-            src="/DESPAITETION.github-io2/image1.jpg"
+            src="./image1.jpg"
             alt="Карта-изображение"
             className="image-map"
             width={300}
