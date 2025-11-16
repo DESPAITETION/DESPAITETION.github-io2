@@ -7,6 +7,7 @@ import TableSection from './components/TableSection';
 import FormSection from './components/FormSection';
 import ServiceCalculator from './components/ServiceCalculator';
 import Gallery from './components/Gallery';
+import FeedbackForm from './components/FeedbackForm'; // ← НОВЫЙ КОМПОНЕНТ
 
 const { Content, Footer } = Layout;
 
@@ -14,57 +15,29 @@ const App = () => {
   return (
     <ConfigProvider locale={ruRU}>
       <Layout style={{ minHeight: '100vh' }}>
-        {/* Шапка сайта */}
         <Header />
-        
-        {/* Основное содержимое */}
         <Content style={{ padding: '20px 0' }}>
           <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 16px' }}>
             <Row gutter={[24, 24]}>
-              {/* Блок с таблицей и ссылками */}
               <Col xs={24} lg={{ span: 18, order: 2 }} className="mobile-order-2">
                 <LinksSection />
               </Col>
-              
               <Col xs={24} lg={{ span: 6, order: 1 }} className="mobile-order-1">
                 <TableSection />
               </Col>
             </Row>
             
-            {/* Форма */}
-            <Row style={{ marginTop: 24 }}>
-              <Col xs={24}>
-                <FormSection />
-              </Col>
-            </Row>
-
-            {/* Галерея (задание 7) */}
-            <Row style={{ marginTop: 24 }}>
-              <Col xs={24}>
-                <Gallery />
-              </Col>
-            </Row>
-
-            {/* Калькулятор услуг (задание 6) */}
-            <Row style={{ marginTop: 24 }}>
-              <Col xs={24}>
-                <ServiceCalculator />
-              </Col>
-            </Row>
+            <FormSection />
+            <Gallery />
+            <ServiceCalculator />
           </div>
         </Content>
-        
-        {/* Подвал сайта */}
-        <Footer style={{ 
-          backgroundColor: '#001529', 
-          color: 'white', 
-          textAlign: 'center',
-          marginTop: 48 
-        }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            &copy; Ханаху Каплан 2025
-          </div>
+        <Footer>
+          &copy; Ханаху Каплан 2025
         </Footer>
+
+        {/* Плавающая кнопка обратной связи */}
+        <FeedbackForm /> {/* ← ДОБАВЛЕНО ЗДЕСЬ */}
       </Layout>
     </ConfigProvider>
   );
